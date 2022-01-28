@@ -1,6 +1,12 @@
 /* nav bar */
 .nav {
   width: 95wv;
+  background-color: #999999;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 0;
 }
 
 .nav-center {
@@ -9,6 +15,7 @@
 }
 
 .nav-header {
+  margin-left: 0.5rem;
   display: flex;
 }
 
@@ -26,4 +33,26 @@
 .links a {
   text-decoration: none;
   color: #444444;
+}
+
+.about-section {
+  margin-top: 8rem;
+}
+
+.about-center {
+  text-align: center;
+}
+
+.about-center h3::after {
+  content: "";
+  display: block;
+  background: lightcoral;
+  width: 30vw;
+  height: 5px;
+  margin: 0 auto;
+}
+
+.about-center p {
+  width: 80%;
+  margin: 1.5rem auto;
 }
