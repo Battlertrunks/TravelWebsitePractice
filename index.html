@@ -47,12 +47,14 @@
         <h3>Our trip destinations for you.</h3>
         <div class="tab">
           <div class="btn-container">
-            <button class="tab-btn active">Denver, Colorado</button>
-            <button class="tab-btn">Berlin, Germany</button>
-            <button class="tab-btn">Tokyo, Japan</button>
+            <button class="tab-btn active" data-id="denver">
+              Denver, Colorado
+            </button>
+            <button class="tab-btn" data-id="berlin">Berlin, Germany</button>
+            <button class="tab-btn" data-id="toyko">Tokyo, Japan</button>
           </div>
           <article class="information">
-            <div class="info active">
+            <div class="info active" id="denver">
               <h3>Denver</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -61,7 +63,7 @@
                 minima totam quos sunt. Nulla!
               </p>
             </div>
-            <div class="info">
+            <div class="info" id="berlin">
               <h3>Berlin</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
@@ -70,7 +72,7 @@
                 maiores ut aperiam ducimus.
               </p>
             </div>
-            <div class="info active">
+            <div class="info" id="toyko">
               <h3>Tokyo</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
