@@ -1,9 +1,8 @@
 /* nav bar */
 .nav {
-  width: 95wv;
   background-color: #999999;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
   padding: 0.5rem 0;
@@ -47,7 +46,7 @@
   content: "";
   display: block;
   background: lightcoral;
-  width: 30vw;
+  width: 200px;
   height: 5px;
   margin: 0 auto;
 }
@@ -61,7 +60,19 @@
 
 .destinations-section {
   padding-top: 5em;
-  width: 600px;
+  width: 600;
+  margin: 0 auto;
+}
+
+.destinations-header {
+  text-align: center;
+}
+.destinations-header::after {
+  content: "";
+  display: block;
+  background: lightcoral;
+  width: 275px;
+  height: 5px;
   margin: 0 auto;
 }
 
@@ -108,4 +119,16 @@
 
 .info.active {
   display: block;
+}
+
+@media only screen and (min-width: 325px) {
+  .nav {
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .destinations-section {
+    width: 800;
+  }
 }
