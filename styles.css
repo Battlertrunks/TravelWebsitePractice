@@ -29,7 +29,7 @@ h2 {
 }
 
 .links {
-  height: 8rem;
+  height: 0;
   overflow: hidden;
   transition: all linear 0.3s;
 }

@@ -2,6 +2,9 @@ const btns = document.querySelectorAll(".tab-btn");
 const about = document.querySelector(".tab");
 const articles = document.querySelectorAll(".info");
 
+const navBtn = document.querySelector(".nav-btn");
+const links = document.querySelector(".links");
+
 about.addEventListener("click", function (e) {
   const id = e.target.dataset.id;
 
@@ -17,4 +20,8 @@ about.addEventListener("click", function (e) {
   });
   const element = document.getElementById(id);
   element.classList.add("active");
+});
+
+navBtn.addEventListener("click", function () {
+  links.classList.toggle("revel-links");
 });
