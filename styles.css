@@ -75,13 +75,14 @@ body {
 
 .links li {
   list-style: none;
+  border-radius: 10px;
 }
 
 /* TODO - Change color to white once background image is found. */
 .links a {
   text-decoration: none;
   padding: 1rem 2rem;
-  color: #444444;
+  color: #fff;
   display: block;
   transition: all linear 0.3s;
 }
@@ -187,6 +188,49 @@ body {
   display: block;
 }
 
+.contact-us-section {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.contact-us-section h3::after {
+  content: "";
+  display: block;
+  background: lightcoral;
+  width: 125px;
+  height: 5px;
+  margin: 0 auto;
+}
+
+.options {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.option {
+  border: 3px #fff solid;
+  border-radius: 15px;
+  width: 11rem;
+  height: 8rem;
+}
+
+.option h4 {
+  color: #fff;
+  margin: 0.75rem 0;
+}
+
+.option i {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.option i:hover {
+  transition: color 0.2s ease-in;
+  color: lightcoral;
+}
+
+/* mobile verision: */
 @media screen and (min-width: 800px) {
   .nav {
     background-color: #4da9ff;
@@ -219,6 +263,10 @@ body {
     width: 50vw;
   }
 
+  .links li {
+    border: 2.5px #eee solid;
+  }
+
   .about-section {
     margin-top: 8rem;
   }
@@ -226,6 +274,7 @@ body {
   /* Destinations tab layout */
 
   .destinations-section {
+    width: 80%;
     padding-top: 5em;
     width: 600px;
     margin: 0 auto;
