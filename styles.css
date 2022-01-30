@@ -246,7 +246,24 @@ body {
   color: lightcoral;
 }
 
-/* mobile verision: */
+.footer-section {
+  position: relative;
+  height: 8rem;
+  background-color: #6eb1cc;
+  box-shadow: -1px -1px 35px #a5a5a5;
+}
+
+.copyright-information {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.copyright-information p {
+  color: #fff;
+}
+
+/* desktop verision: */
 @media screen and (min-width: 800px) {
   .nav {
     background-color: #6eb1cc;
