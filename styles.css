@@ -209,9 +209,17 @@ body {
   margin: 0 auto;
 }
 
+.contact-us-section p {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  width: 85%;
+}
+
 .options {
   margin: 3rem 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -220,6 +228,7 @@ body {
   border-radius: 15px;
   width: 11rem;
   height: 8rem;
+  margin: 0.75rem 0;
 }
 
 .option h4 {
@@ -286,6 +295,10 @@ body {
     padding-top: 5em;
     width: 600px;
     margin: 0 auto;
+  }
+
+  .options {
+    flex-direction: row;
   }
 }
 
