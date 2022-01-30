@@ -10,7 +10,7 @@ h2 {
 }
 
 h3 {
-  color: #fff;
+  color: #333333;
 }
 
 h1,
@@ -20,10 +20,11 @@ h4 {
   text-transform: capitalize;
 }
 
+html {
+  background: #fff;
+}
+
 body {
-  background: linear-gradient(#4da9ffa8, #265580a7), url(./DenverColorado.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* nav bar */
@@ -55,7 +56,7 @@ body {
 }
 
 .nav-header {
-  background-color: #4da9ff;
+  background-color: #6eb1cc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,13 +88,16 @@ body {
   transition: all linear 0.3s;
 }
 
-.links a:hover {
-  background-color: #eee;
-  transition: background-color 0.2s ease-out;
+.about-section {
+  padding-top: 2rem;
+  background: linear-gradient(#4da9ffa8, #265580a7), url(./DenverColorado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
 }
 
-.about-section {
-  margin-top: 1rem;
+.about-center h3 {
+  color: #fff;
 }
 
 .about-center {
@@ -152,7 +156,7 @@ body {
 }
 
 .tab-btn {
-  background-color: #0076a8;
+  background-color: #6eb1cc;
   color: #fff;
   width: 100%;
   height: 45px;
@@ -160,8 +164,10 @@ body {
 }
 
 .tab-btn:hover {
-  transition: background-color 0.5s ease-out;
-  background-color: #44b2e1;
+  transition: color 0.6s ease-out;
+  transition: background-color 0.3s ease-in;
+  background-color: #d6f3ff;
+  color: #333;
   cursor: pointer;
 }
 
@@ -174,7 +180,7 @@ body {
 }
 
 .information {
-  background: #44b2e1;
+  background: #d6f3ff;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 1rem;
@@ -189,7 +195,8 @@ body {
 }
 
 .contact-us-section {
-  margin: 5rem auto;
+  margin: 2rem auto;
+  margin-top: 15rem;
   text-align: center;
 }
 
@@ -209,20 +216,20 @@ body {
 }
 
 .option {
-  border: 3px #fff solid;
+  border: 3px #888 solid;
   border-radius: 15px;
   width: 11rem;
   height: 8rem;
 }
 
 .option h4 {
-  color: #fff;
+  color: #333;
   margin: 0.75rem 0;
 }
 
 .option i {
   font-size: 4rem;
-  color: #fff;
+  color: #222;
 }
 
 .option i:hover {
@@ -233,11 +240,8 @@ body {
 /* mobile verision: */
 @media screen and (min-width: 800px) {
   .nav {
-    background-color: #4da9ff;
-    position: absolute;
+    background-color: #6eb1cc;
     width: 100%;
-    top: 0;
-    left: 0;
   }
 
   .nav-center {
@@ -267,8 +271,12 @@ body {
     border: 2.5px #eee solid;
   }
 
+  .links li:hover {
+    background-color: #3ebaeb;
+    transition: background-color 0.2s ease-out;
+  }
+
   .about-section {
-    margin-top: 8rem;
   }
 
   /* Destinations tab layout */
