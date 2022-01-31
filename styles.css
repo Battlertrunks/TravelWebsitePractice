@@ -1,3 +1,6 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Serif+4&display=swap");
+
 *,
 ::before,
 ::after {
@@ -9,22 +12,24 @@ h2 {
   font-size: 20px;
 }
 
-h3 {
-  color: #333333;
-}
-
 h1,
 h2,
 h3,
-h4 {
+h4,
+a {
   text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+
+p {
+  font-family: "Source Serif", sans-serif;
+  color: #333333;
 }
 
 html {
   background: #fff;
-}
-
-body {
+  scroll-behavior: smooth;
 }
 
 /* nav bar */
@@ -93,7 +98,7 @@ body {
   background: linear-gradient(#4da9ffa8, #265580a7), url(./DenverColorado.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25rem;
+  height: 28rem;
 }
 
 .about-center h3 {
@@ -103,10 +108,10 @@ body {
 .about-center {
   text-align: center;
   margin: 0 auto;
-  border: 4px #eee solid;
+  border: 4px #fff solid;
   border-radius: 15px;
   width: 80%;
-  padding: 0.75rem;
+  padding: 0 0.5rem 0.75rem;
 }
 
 .about-center h3::after {
@@ -232,7 +237,6 @@ body {
 }
 
 .option h4 {
-  color: #333;
   margin: 0.75rem 0;
 }
 
@@ -300,9 +304,6 @@ body {
   .links li:hover {
     background-color: #3ebaeb;
     transition: background-color 0.2s ease-out;
-  }
-
-  .about-section {
   }
 
   /* Destinations tab layout */
